@@ -24,5 +24,5 @@ Matcoefs=transpose matrix{{L1},{L2},{L3},{L4}}
 (W,C) = coefficients(Matcoefs, Monomials=>{X_0,X_1,X_2})
 --here we check that ther are linearly independent
 minors(3,transpose sub(C,G))
---here we verify that the weak Hadamard star configuration X(L_1,...,L_4) is a Hadamard star configuration.
+--here we verify that the weak Hadamard star configuration X(L_1,...,L_4) is a Hadamard star configuration.!
 rank transpose matrix for a in entries sub(C,G) list apply(a, i-> 1/i)
